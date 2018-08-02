@@ -1,0 +1,28 @@
+form.dna
+  .form-group
+    textarea.form-control(cols=14, rows=16)
+  .form-group
+    a.btn.btn-success.btn-block.dna__create Create from this ASCII DNA
+  .btn-group-vertical
+    a.btn.btn-default.btn-block.dna__goomba(data-character='goomba') Goomba
+    a.btn.btn-default.btn-block.dna__mario(data-character='mario') Mario
+    a.btn.btn-default.btn-block.dna__mushroom(data-character='mushroom') Mushroom
+    a.btn.btn-default.btn-block.dna__coin(data-character='coin') Coin
+    
+form.form.camera
+  legend Camera 
+  // Position 
+  label.form-group X 
+    input.form-control(type="number", id="camera_x", value="3", step="0.1")
+  label.form-group Y 
+    input.form-control(type="number", id="camera_y", value="0", step="0.1")
+  label.form-group Z
+    input.form-control(type="number", id="camera_z", value="40", step="0.1")
+    
+  // Rotation 
+  label.form-group Rotation X 
+    input.form-control(type="number", id="camera-rotation_x", value="0", step="0.1")
+  label.form-group Rotation Y 
+    input.form-control(type="number", id="camera-rotation_y", value="0", step="0.1")
+  label.form-group Rotation Z
+    input.form-control(type="number", id="camera-rotation_z", value="0", step="0.1")
